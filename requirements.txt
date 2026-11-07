@@ -1,0 +1,13 @@
+# Pinned exactly: the saved .joblib pipelines in model/ were built with these
+# versions, and unpickling across a different scikit-learn/numpy/scipy build is
+# the most common reason a working model fails after deployment.
+scikit-learn==1.6.1
+numpy==2.0.2
+scipy==1.13.1
+
+# Everything below only has to be API-compatible, so a lower bound is enough.
+streamlit>=1.40
+pandas>=2.2
+matplotlib>=3.8
+seaborn>=0.13
+joblib>=1.4
