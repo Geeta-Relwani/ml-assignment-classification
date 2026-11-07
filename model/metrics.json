@@ -1,0 +1,68 @@
+{
+  "dataset": "UCI Online Shoppers Purchasing Intention",
+  "n_train": 9764,
+  "n_test": 2441,
+  "random_state": 42,
+  "search_scoring": "f1",
+  "best_params": {
+    "Logistic Regression": {
+      "C": 0.01
+    },
+    "Decision Tree": {
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "KNN": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "Naive Bayes": {
+      "var_smoothing": 0.1
+    },
+    "Support Vector Machine": {
+      "C": 1.0
+    }
+  },
+  "metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.8586644817697665,
+      "AUC": 0.909931878688633,
+      "Precision": 0.5325131810193322,
+      "Recall": 0.7931937172774869,
+      "F1": 0.637223974763407,
+      "MCC": 0.570587183147845
+    },
+    "Decision Tree": {
+      "Accuracy": 0.8480131093814011,
+      "AUC": 0.9242236230163069,
+      "Precision": 0.5085271317829457,
+      "Recall": 0.8586387434554974,
+      "F1": 0.6387536514118792,
+      "MCC": 0.5806562326947422
+    },
+    "KNN": {
+      "Accuracy": 0.8734125358459648,
+      "AUC": 0.7957803691620748,
+      "Precision": 0.6622222222222223,
+      "Recall": 0.3900523560209424,
+      "F1": 0.49093904448105435,
+      "MCC": 0.44353934223355135
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.8160589922163048,
+      "AUC": 0.8418270954486624,
+      "Precision": 0.44194107452339687,
+      "Recall": 0.6675392670157068,
+      "F1": 0.5318039624608968,
+      "MCC": 0.4371189447044406
+    },
+    "Support Vector Machine": {
+      "Accuracy": 0.8689061859893487,
+      "AUC": 0.9095415606111846,
+      "Precision": 0.55893536121673,
+      "Recall": 0.7696335078534031,
+      "F1": 0.6475770925110133,
+      "MCC": 0.5805235421427704
+    }
+  }
+}
