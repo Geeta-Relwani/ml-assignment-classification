@@ -1,0 +1,14 @@
+# Pinning the theme keeps the page readable regardless of the viewer's
+# light/dark preference: the custom CSS in app.py sets explicit dark text
+# colours, which would be unreadable on Streamlit's dark background.
+[theme]
+base = "light"
+primaryColor = "#2f6f6b"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f7f9"
+textColor = "#13203a"
+
+[server]
+# The app only ever scores a small held-out CSV, so the default 200 MB cap is
+# far larger than needed on Streamlit Community Cloud's limited free tier.
+maxUploadSize = 25
