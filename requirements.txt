@@ -1,11 +1,16 @@
-# Pinned exactly: the saved .joblib pipelines in model/ were built with these
-# versions, and unpickling across a different scikit-learn/numpy/scipy build is
-# the most common reason a working model fails after deployment.
+# scikit-learn is pinned exactly: the saved .joblib pipelines in model/ were
+# built with this version, and unpickling an estimator across a different
+# scikit-learn release is the most common reason a working model breaks after
+# deployment.
 scikit-learn==1.6.1
-numpy==2.0.2
-scipy==1.13.1
 
-# Everything below only has to be API-compatible, so a lower bound is enough.
+# numpy and scipy are given ranges rather than exact pins. The arrays inside
+# the pickled estimators are numpy 2.x format, so the major version has to
+# match - but holding numpy to one patch release would force a source build on
+# whichever Python version Streamlit Community Cloud happens to run.
+numpy>=2.0,<3
+scipy>=1.13,<2
+
 streamlit>=1.40
 pandas>=2.2
 matplotlib>=3.8
