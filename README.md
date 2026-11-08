@@ -78,7 +78,7 @@ invent an ordering that does not exist.
 
 <https://github.com/Geeta-Relwani/ml-assignment-classification>
 
-**Live Streamlit app:** _<!-- paste the Streamlit Community Cloud URL here after deploying -->_
+**Live Streamlit app:** <https://classification-assignment-2026aj05911.streamlit.app/>
 
 ### Repository contents
 
